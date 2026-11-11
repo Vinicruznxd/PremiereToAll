@@ -1,0 +1,1795 @@
+{
+  "tint": {
+    "black": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "id": "black",
+      "label": "Map Black To",
+      "type": "color"
+    },
+    "white": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "white",
+      "label": "Map White To",
+      "type": "color"
+    },
+    "amount": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "amount",
+      "label": "Amount to Tint",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    }
+  },
+  "lumetri": {
+    "basic_on": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "basic_on",
+      "label": "Basic Correction",
+      "type": "bool"
+    },
+    "input_lut": {
+      "animatable": false,
+      "default": {
+        "Text": ""
+      },
+      "id": "input_lut",
+      "label": "Input LUT",
+      "type": "text"
+    },
+    "temperature": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "temperature",
+      "label": "Temperature",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "tint": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "tint",
+      "label": "Tint",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "exposure": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "exposure",
+      "label": "Exposure",
+      "max": 5.0,
+      "min": -5.0,
+      "type": "float",
+      "unit": ""
+    },
+    "contrast": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "contrast",
+      "label": "Contrast",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "highlights": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "highlights",
+      "label": "Highlights",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "shadows": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "shadows",
+      "label": "Shadows",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "whites": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "whites",
+      "label": "Whites",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "blacks": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "blacks",
+      "label": "Blacks",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "saturation": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "saturation",
+      "label": "Saturation",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hdr_white": {
+      "animatable": true,
+      "default": {
+        "Float": 1000.0
+      },
+      "id": "hdr_white",
+      "label": "HDR White",
+      "max": 10000.0,
+      "min": 100.0,
+      "type": "float",
+      "unit": "nits"
+    },
+    "hdr_specular": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hdr_specular",
+      "label": "HDR Specular",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "creative_on": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "creative_on",
+      "label": "Creative",
+      "type": "bool"
+    },
+    "look": {
+      "animatable": false,
+      "default": {
+        "Choice": 0
+      },
+      "id": "look",
+      "label": "Look",
+      "options": [
+        "None",
+        "Teal & Orange",
+        "Warm Film",
+        "Cool Blue",
+        "Bleach Bypass",
+        "Faded Matte",
+        "Monochrome",
+        "Golden Hour",
+        "Night"
+      ],
+      "type": "choice"
+    },
+    "look_lut": {
+      "animatable": false,
+      "default": {
+        "Text": ""
+      },
+      "id": "look_lut",
+      "label": "Look LUT",
+      "type": "text"
+    },
+    "look_intensity": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "look_intensity",
+      "label": "Intensity",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "faded_film": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "faded_film",
+      "label": "Faded Film",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "sharpen": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "sharpen",
+      "label": "Sharpen",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "vibrance": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "vibrance",
+      "label": "Vibrance",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "creative_sat": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "creative_sat",
+      "label": "Saturation",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "shadow_tint": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      "id": "shadow_tint",
+      "label": "Shadow Tint",
+      "type": "color"
+    },
+    "highlight_tint": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      "id": "highlight_tint",
+      "label": "Highlight Tint",
+      "type": "color"
+    },
+    "curves_on": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "curves_on",
+      "label": "Curves",
+      "type": "bool"
+    },
+    "curve_luma": {
+      "animatable": false,
+      "default": {
+        "Curve": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "id": "curve_luma",
+      "label": "Luma Curve",
+      "type": "curve"
+    },
+    "curve_red": {
+      "animatable": false,
+      "default": {
+        "Curve": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "id": "curve_red",
+      "label": "Red Curve",
+      "type": "curve"
+    },
+    "curve_green": {
+      "animatable": false,
+      "default": {
+        "Curve": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "id": "curve_green",
+      "label": "Green Curve",
+      "type": "curve"
+    },
+    "curve_blue": {
+      "animatable": false,
+      "default": {
+        "Curve": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "id": "curve_blue",
+      "label": "Blue Curve",
+      "type": "curve"
+    },
+    "hue_vs_sat": {
+      "animatable": false,
+      "default": {
+        "Curve": []
+      },
+      "id": "hue_vs_sat",
+      "label": "Hue vs Sat",
+      "type": "curve"
+    },
+    "hue_vs_hue": {
+      "animatable": false,
+      "default": {
+        "Curve": []
+      },
+      "id": "hue_vs_hue",
+      "label": "Hue vs Hue",
+      "type": "curve"
+    },
+    "hue_vs_luma": {
+      "animatable": false,
+      "default": {
+        "Curve": []
+      },
+      "id": "hue_vs_luma",
+      "label": "Hue vs Luma",
+      "type": "curve"
+    },
+    "luma_vs_sat": {
+      "animatable": false,
+      "default": {
+        "Curve": []
+      },
+      "id": "luma_vs_sat",
+      "label": "Luma vs Sat",
+      "type": "curve"
+    },
+    "sat_vs_sat": {
+      "animatable": false,
+      "default": {
+        "Curve": []
+      },
+      "id": "sat_vs_sat",
+      "label": "Sat vs Sat",
+      "type": "curve"
+    },
+    "curves_hdr_range": {
+      "animatable": true,
+      "default": {
+        "Float": 1000.0
+      },
+      "id": "curves_hdr_range",
+      "label": "HDR Range",
+      "max": 10000.0,
+      "min": 100.0,
+      "type": "float",
+      "unit": "nits"
+    },
+    "wheels_on": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "wheels_on",
+      "label": "Color Wheels & Match",
+      "type": "bool"
+    },
+    "wheel_shadows": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "id": "wheel_shadows",
+      "label": "Shadows",
+      "type": "wheel"
+    },
+    "wheel_shadows_l": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "wheel_shadows_l",
+      "label": "Shadows Lightness",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "wheel_midtones": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "id": "wheel_midtones",
+      "label": "Midtones",
+      "type": "wheel"
+    },
+    "wheel_midtones_l": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "wheel_midtones_l",
+      "label": "Midtones Lightness",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "wheel_highlights": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "id": "wheel_highlights",
+      "label": "Highlights",
+      "type": "wheel"
+    },
+    "wheel_highlights_l": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "wheel_highlights_l",
+      "label": "Highlights Lightness",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_on": {
+      "animatable": false,
+      "default": {
+        "Bool": false
+      },
+      "id": "hsl_on",
+      "label": "Enable HSL Secondary",
+      "type": "bool"
+    },
+    "hsl_hue": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_hue",
+      "label": "Hue Center",
+      "max": 360.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "°"
+    },
+    "hsl_hue_range": {
+      "animatable": true,
+      "default": {
+        "Float": 30.0
+      },
+      "id": "hsl_hue_range",
+      "label": "Hue Range",
+      "max": 180.0,
+      "min": 1.0,
+      "type": "float",
+      "unit": "°"
+    },
+    "hsl_sat_min": {
+      "animatable": true,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "hsl_sat_min",
+      "label": "Saturation Min",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_luma_min": {
+      "animatable": true,
+      "default": {
+        "Float": 5.0
+      },
+      "id": "hsl_luma_min",
+      "label": "Luma Min",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_luma_max": {
+      "animatable": true,
+      "default": {
+        "Float": 95.0
+      },
+      "id": "hsl_luma_max",
+      "label": "Luma Max",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_soft": {
+      "animatable": true,
+      "default": {
+        "Float": 20.0
+      },
+      "id": "hsl_soft",
+      "label": "Soften",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_show_mask": {
+      "animatable": false,
+      "default": {
+        "Choice": 0
+      },
+      "id": "hsl_show_mask",
+      "label": "Show Mask",
+      "options": [
+        "Off",
+        "Color/Gray",
+        "Color/Black",
+        "White/Black"
+      ],
+      "type": "choice"
+    },
+    "hsl_denoise": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_denoise",
+      "label": "Denoise",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_blur": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_blur",
+      "label": "Blur",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_temp": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_temp",
+      "label": "Temperature",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_tint": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_tint",
+      "label": "Tint",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_sat": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "hsl_sat",
+      "label": "Saturation",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "hsl_hue_shift": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "hsl_hue_shift",
+      "label": "Hue Shift",
+      "max": 180.0,
+      "min": -180.0,
+      "type": "float",
+      "unit": "°"
+    },
+    "vignette_on": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "vignette_on",
+      "label": "Vignette",
+      "type": "bool"
+    },
+    "vignette_amount": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "vignette_amount",
+      "label": "Amount",
+      "max": 5.0,
+      "min": -5.0,
+      "type": "float",
+      "unit": ""
+    },
+    "vignette_midpoint": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "vignette_midpoint",
+      "label": "Midpoint",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "vignette_roundness": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "vignette_roundness",
+      "label": "Roundness",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "vignette_feather": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "vignette_feather",
+      "label": "Feather",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "gaussian_blur": {
+    "blurriness": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "blurriness",
+      "label": "Blurriness",
+      "max": 3000.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "dimensions": {
+      "animatable": false,
+      "default": {
+        "Choice": 0
+      },
+      "id": "dimensions",
+      "label": "Blur Dimensions",
+      "options": [
+        "Horizontal and Vertical",
+        "Horizontal",
+        "Vertical"
+      ],
+      "type": "choice"
+    },
+    "repeat_edge": {
+      "animatable": false,
+      "default": {
+        "Bool": false
+      },
+      "id": "repeat_edge",
+      "label": "Repeat Edge Pixels",
+      "type": "bool"
+    }
+  },
+  "directional_blur": {
+    "direction": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "direction",
+      "label": "Direction",
+      "type": "angle"
+    },
+    "length": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "length",
+      "label": "Blur Length",
+      "max": 1000.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "black_white": {},
+  "levels": {
+    "in_black": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "in_black",
+      "label": "(RGB) Input Black Level",
+      "max": 255.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "in_white": {
+      "animatable": true,
+      "default": {
+        "Float": 255.0
+      },
+      "id": "in_white",
+      "label": "(RGB) Input White Level",
+      "max": 255.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "out_black": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "out_black",
+      "label": "(RGB) Output Black Level",
+      "max": 255.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "out_white": {
+      "animatable": true,
+      "default": {
+        "Float": 255.0
+      },
+      "id": "out_white",
+      "label": "(RGB) Output White Level",
+      "max": 255.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "gamma": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "gamma",
+      "label": "(RGB) Gamma",
+      "max": 1000.0,
+      "min": 10.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "median": {
+    "radius": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "radius",
+      "label": "Radius",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "crop": {
+    "left": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "left",
+      "label": "Left",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "top": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "top",
+      "label": "Top",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "right": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "right",
+      "label": "Right",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "bottom": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "bottom",
+      "label": "Bottom",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "zoom": {
+      "animatable": false,
+      "default": {
+        "Bool": false
+      },
+      "id": "zoom",
+      "label": "Zoom",
+      "type": "bool"
+    },
+    "feather": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "feather",
+      "label": "Edge Feather",
+      "max": 1000.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "horizontal_flip": {},
+  "vertical_flip": {},
+  "transform": {
+    "anchor": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": null,
+          "y": null
+        }
+      },
+      "id": "anchor",
+      "label": "Anchor Point",
+      "type": "point"
+    },
+    "position": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": null,
+          "y": null
+        }
+      },
+      "id": "position",
+      "label": "Position",
+      "type": "point"
+    },
+    "uniform_scale": {
+      "animatable": false,
+      "default": {
+        "Bool": true
+      },
+      "id": "uniform_scale",
+      "label": "Uniform Scale",
+      "type": "bool"
+    },
+    "scale_height": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "scale_height",
+      "label": "Scale Height",
+      "max": 10000.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "scale_width": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "scale_width",
+      "label": "Scale Width",
+      "max": 10000.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "skew": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "skew",
+      "label": "Skew",
+      "max": 70.0,
+      "min": -70.0,
+      "type": "float",
+      "unit": ""
+    },
+    "skew_axis": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "skew_axis",
+      "label": "Skew Axis",
+      "type": "angle"
+    },
+    "rotation": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "rotation",
+      "label": "Rotation",
+      "type": "angle"
+    },
+    "opacity": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "opacity",
+      "label": "Opacity",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "shutter_override": {
+      "animatable": false,
+      "default": {
+        "Bool": false
+      },
+      "id": "shutter_override",
+      "label": "Use Effect Shutter Angle",
+      "type": "bool"
+    },
+    "shutter_angle": {
+      "animatable": true,
+      "default": {
+        "Float": 180.0
+      },
+      "id": "shutter_angle",
+      "label": "Shutter Angle",
+      "max": 360.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "mirror": {
+    "center": {
+      "animatable": true,
+      "default": {
+        "Vec2": {
+          "x": null,
+          "y": null
+        }
+      },
+      "id": "center",
+      "label": "Reflection Center",
+      "type": "point"
+    },
+    "angle": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "angle",
+      "label": "Reflection Angle",
+      "type": "angle"
+    }
+  },
+  "lens_distortion": {
+    "curvature": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "curvature",
+      "label": "Curvature",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "v_decentering": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "v_decentering",
+      "label": "Vertical Decentering",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    },
+    "h_decentering": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "h_decentering",
+      "label": "Horizontal Decentering",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "wave_warp": {
+    "height": {
+      "animatable": true,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "height",
+      "label": "Wave Height",
+      "max": 4000.0,
+      "min": -4000.0,
+      "type": "float",
+      "unit": ""
+    },
+    "width": {
+      "animatable": true,
+      "default": {
+        "Float": 40.0
+      },
+      "id": "width",
+      "label": "Wave Width",
+      "max": 4000.0,
+      "min": 1.0,
+      "type": "float",
+      "unit": ""
+    },
+    "direction": {
+      "animatable": true,
+      "default": {
+        "Float": 90.0
+      },
+      "id": "direction",
+      "label": "Direction",
+      "type": "angle"
+    },
+    "speed": {
+      "animatable": true,
+      "default": {
+        "Float": 1.0
+      },
+      "id": "speed",
+      "label": "Wave Speed",
+      "max": 100.0,
+      "min": -100.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "ultra_key": {
+    "key_color": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          0.0,
+          0.800000011920929,
+          0.20000000298023224,
+          1.0
+        ]
+      },
+      "id": "key_color",
+      "label": "Key Color",
+      "type": "color"
+    },
+    "output": {
+      "animatable": false,
+      "default": {
+        "Choice": 0
+      },
+      "id": "output",
+      "label": "Output",
+      "options": [
+        "Composite",
+        "Alpha Channel",
+        "Color Channel"
+      ],
+      "type": "choice"
+    },
+    "setting": {
+      "animatable": false,
+      "default": {
+        "Choice": 0
+      },
+      "id": "setting",
+      "label": "Setting",
+      "options": [
+        "Default",
+        "Relaxed",
+        "Aggressive",
+        "Custom"
+      ],
+      "type": "choice"
+    },
+    "transparency": {
+      "animatable": true,
+      "default": {
+        "Float": 45.0
+      },
+      "id": "transparency",
+      "label": "Transparency",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "highlight": {
+      "animatable": true,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "highlight",
+      "label": "Highlight",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "shadow": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "shadow",
+      "label": "Shadow",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "tolerance": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "tolerance",
+      "label": "Tolerance",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "pedestal": {
+      "animatable": true,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "pedestal",
+      "label": "Pedestal",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "choke": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "choke",
+      "label": "Choke",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "soften": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "soften",
+      "label": "Soften",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "spill": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "spill",
+      "label": "Spill",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "contrast": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "contrast",
+      "label": "Contrast",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "mid_point": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "mid_point",
+      "label": "Mid Point",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "desaturate": {
+      "animatable": true,
+      "default": {
+        "Float": 25.0
+      },
+      "id": "desaturate",
+      "label": "Desaturate",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "range": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "range",
+      "label": "Range",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "spill_luma": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "spill_luma",
+      "label": "Luma",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "cc_saturation": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "cc_saturation",
+      "label": "Saturation",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    },
+    "cc_hue": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "cc_hue",
+      "label": "Hue",
+      "type": "angle"
+    },
+    "cc_luminance": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "cc_luminance",
+      "label": "Luminance",
+      "max": 200.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "bandpass": {
+    "center": {
+      "animatable": true,
+      "default": {
+        "Float": 1000.0
+      },
+      "id": "center",
+      "label": "Center",
+      "max": 20000.0,
+      "min": 20.0,
+      "type": "float",
+      "unit": "Hz"
+    },
+    "q": {
+      "animatable": true,
+      "default": {
+        "Float": 1.0
+      },
+      "id": "q",
+      "label": "Q",
+      "max": 20.0,
+      "min": 0.1,
+      "type": "float",
+      "unit": ""
+    }
+  },
+  "graphic_eq": {
+    "b1": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b1",
+      "label": "31.5 Hz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b2": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b2",
+      "label": "63 Hz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b3": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b3",
+      "label": "125 Hz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b4": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b4",
+      "label": "250 Hz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b5": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b5",
+      "label": "500 Hz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b6": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b6",
+      "label": "1 kHz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b7": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b7",
+      "label": "2 kHz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b8": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b8",
+      "label": "4 kHz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b9": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b9",
+      "label": "8 kHz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "b10": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "b10",
+      "label": "16 kHz",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    },
+    "gain": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "gain",
+      "label": "Master Gain",
+      "max": 24.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    }
+  },
+  "denoise": {
+    "amount": {
+      "animatable": true,
+      "default": {
+        "Float": 40.0
+      },
+      "id": "amount",
+      "label": "Amount",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    }
+  },
+  "dereverb": {
+    "amount": {
+      "animatable": true,
+      "default": {
+        "Float": 50.0
+      },
+      "id": "amount",
+      "label": "Amount",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "rt60": {
+      "animatable": true,
+      "default": {
+        "Float": 0.8
+      },
+      "id": "rt60",
+      "label": "Decay Time (RT60)",
+      "max": 5.0,
+      "min": 0.1,
+      "type": "float",
+      "unit": "s"
+    }
+  },
+  "convolution_reverb": {
+    "impulse": {
+      "animatable": false,
+      "default": {
+        "Choice": 1
+      },
+      "id": "impulse",
+      "label": "Impulse",
+      "options": [
+        "Small Room",
+        "Medium Room",
+        "Large Hall",
+        "Cathedral",
+        "Plate",
+        "Ambience",
+        "Vocal Booth"
+      ],
+      "type": "choice"
+    },
+    "mix": {
+      "animatable": true,
+      "default": {
+        "Float": 30.0
+      },
+      "id": "mix",
+      "label": "Mix",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "room_size": {
+      "animatable": false,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "room_size",
+      "label": "Room Size",
+      "max": 100.0,
+      "min": 10.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "damping_lf": {
+      "animatable": false,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "damping_lf",
+      "label": "Damping LF",
+      "max": 1000.0,
+      "min": 10.0,
+      "type": "float",
+      "unit": "Hz"
+    },
+    "damping_hf": {
+      "animatable": false,
+      "default": {
+        "Float": 20000.0
+      },
+      "id": "damping_hf",
+      "label": "Damping HF",
+      "max": 20000.0,
+      "min": 1000.0,
+      "type": "float",
+      "unit": "Hz"
+    },
+    "predelay": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "predelay",
+      "label": "Pre-Delay",
+      "max": 500.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "ms"
+    },
+    "width": {
+      "animatable": true,
+      "default": {
+        "Float": 100.0
+      },
+      "id": "width",
+      "label": "Width",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "gain": {
+      "animatable": true,
+      "default": {
+        "Float": 0.0
+      },
+      "id": "gain",
+      "label": "Gain",
+      "max": 12.0,
+      "min": -24.0,
+      "type": "float",
+      "unit": "dB"
+    }
+  },
+  "color_replace": {
+    "similarity": {
+      "animatable": true,
+      "default": {
+        "Float": 10.0
+      },
+      "id": "similarity",
+      "label": "Similarity",
+      "max": 100.0,
+      "min": 0.0,
+      "type": "float",
+      "unit": "%"
+    },
+    "solid": {
+      "animatable": false,
+      "default": {
+        "Bool": false
+      },
+      "id": "solid",
+      "label": "Solid Colors",
+      "type": "bool"
+    },
+    "target": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "id": "target",
+      "label": "Target Color",
+      "type": "color"
+    },
+    "replace": {
+      "animatable": true,
+      "default": {
+        "Color": [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      "id": "replace",
+      "label": "Replace Color",
+      "type": "color"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+PremiereToAll 1.3.0 — Windows Portable (64 bits)
+
+1. Extraia TODO o ZIP para uma pasta no computador ou em um pendrive.
+2. Abra PremiereToAll.exe.
+3. Mantenha a pasta _internal ao lado do executável.
+
+Não é necessário instalar Python, Adobe Premiere ou FilmCraft para converter.
+Você pode mover a pasta inteira. Não execute diretamente de dentro do ZIP.
+
+Arraste seus .prproj para o programa, escolha os formatos e converta.
+Por padrão, cada resultado vai para uma subpasta junto ao seu próprio .prproj.
+É possível escolher outro destino na etapa Saída.
+O projeto concluído sai da fila e aparece em Resultados, com Abrir pasta.
+Para retirar um projeto indesejado, use o botão direito > Remover da fila.
+
+Os vídeos e áudios permanecem nas suas pastas originais.
+Para levar a edição a outro computador, disponibilize também as mídias.
+O relatório de cada conversão informa efeitos sem equivalente e outros ajustes.
+
+FFprobe/FFmpeg são opcionais e não estão incluídos. Sem eles, o programa usa
+os metadados do Premiere e informa no relatório as verificações indisponíveis.
+
+O aplicativo usa Qt/PySide6 sob LGPLv3. As bibliotecas dinâmicas ficam separadas
+em _internal; os avisos e textos de licença acompanham a pasta licencas.
+O código-fonte e as instruções para reconstrução estão em codigo_fonte.
+
+Projeto e atualizações:
+https://github.com/Vinicruznxd/PremiereToAll
+
+Consulte README.md e COMPONENTES.md para detalhes e limitações.
